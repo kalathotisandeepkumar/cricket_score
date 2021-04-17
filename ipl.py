@@ -6,4 +6,6 @@ soup = BeautifulSoup(page,'html.parser')
 result = soup.find_all('description')
 ls = []
 for match in result:
-    ls.append(match.get_text())
+    ls.append(match.get_text()) 
+    # to get the recent scores we can use
+    print(ls[-1])
